@@ -1,0 +1,8 @@
+schema: spec-driven
+
+context: |
+  @iwg/templates — horizontal page section templates composed from @iwg/atoms, @iwg/molecules, and @iwg/organisms.
+  Tech stack: React 19, TypeScript (strict), Tailwind CSS 4, Storybook 8.5 (port 6009), Playwright visual regression, tsup (ESM + CJS), pnpm workspace.
+  Templates are "use client" components. Figma MCP is the design source.
+  CRITICAL: Templates NEVER create lower-layer components. If a needed atom/molecule/organism doesn't exist, stop and ask the user.
+  CRITICAL: Before every template, check all upstream exports (atoms, molecules, organisms) and map every Figma element to existing components.
